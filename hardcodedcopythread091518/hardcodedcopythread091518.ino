@@ -99,23 +99,24 @@ void drum2(void) {
       pwm0.setPin(5,0); //PWM OFF
       }
 
+//Y U NO WORK THO
 void drum3(void) {
       Serial.println("Drum 3");
       //Actuator down
-      pwm0.setPin(5,0); //PWM OFF
-      pwm0.setPin(4,0); //IN2 OFF
-      pwm0.setPin(3,4095); //IN1 ON
-      pwm0.setPin(5,4095); //PWM ON
+      pwm0.setPin(6,0); //PWM OFF
+      pwm0.setPin(7,0); //IN2 OFF
+      pwm0.setPin(8,4095); //IN1 ON
+      pwm0.setPin(6,4095); //PWM ON
       Scheduler.delay(60);       //Keep on for down duration
       //Actuator up
-      pwm0.setPin(5,0); //PWM OFF
-      pwm0.setPin(4,4095); //IN2 ON
-      pwm0.setPin(3,0); //IN1 OFF
-      pwm0.setPin(5,4095); //PWM ON
+      pwm0.setPin(6,0); //PWM OFF
+      pwm0.setPin(7,4095); //IN2 ON
+      pwm0.setPin(8,0); //IN1 OFF
+      pwm0.setPin(6,4095); //PWM ON
       Scheduler.delay(60);       //Keep on for down duration
-      pwm0.setPin(5,0); //PWM OFF
+      pwm0.setPin(6,0); //PWM OFF
 }
-
+//YOU TOO!?
 void drum4(void) {
       Serial.println("Drum 4");
       //Actuator down
