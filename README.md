@@ -27,3 +27,5 @@ We want our Drumbot to able to control the velocity and change the parameters of
 * *Programming language:* C++
 
 * *Software*: Arduino IDE, Git/Github/Github Desktop
+
+![alt text](https://i0.wp.com/www.cis.fiu.edu/wp-content/uploads/2018/06/Shell_MLH.png?resize=640%2C302&ssl=1)
