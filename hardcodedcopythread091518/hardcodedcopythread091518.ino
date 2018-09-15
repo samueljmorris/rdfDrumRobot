@@ -173,10 +173,10 @@ void drum6(void) {
 void drum7(void) {
       Serial.println("Drum 7");
       //Actuator down
-      pwm1.setPin(5,0); //PWM OFF
-      pwm1.setPin(4,0); //IN2 OFF
-      pwm1.setPin(3,4095); //IN1 ON
-      pwm1.setPin(5,4095); //PWM ON
+      pwm1.setPin(6,0); //PWM OFF
+      pwm1.setPin(7,0); //IN2 OFF
+      pwm1.setPin(8,4095); //IN1 ON
+      pwm1.setPin(6,4095); //PWM ON
       Scheduler.delay(60);       //Keep on for down duration
       //Actuator up
       pwm1.setPin(5,0); //PWM OFF
