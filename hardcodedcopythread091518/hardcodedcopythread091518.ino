@@ -23,16 +23,46 @@ void setup() {
   Serial.println("PWM 1 initialized.");
 
 //Begin looping threads
+  Scheduler.startLoop(readSerial);
+}
 
-  Scheduler.startLoop(drum1);
-  Scheduler.startLoop(drum2);
-  Scheduler.startLoop(drum3);  
-  Scheduler.startLoop(drum4);
-  Scheduler.startLoop(drum5);
-  Scheduler.startLoop(drum6);
-  Scheduler.startLoop(drum7);
-  Scheduler.startLoop(drum8);
-  
+void readSerial() {
+  // Wait for Serial.available():
+  Scheduler.wait_available(Serial);
+    value = Serial.read();
+    
+    Serial.println (value);
+
+  switch (value) {
+    case '1':
+      Scheduler.start(drum1);
+      break;
+    case '2':
+      Scheduler.start(drum2);
+      break;
+    case '3':
+      Scheduler.start(drum3);
+      break;
+    case '4':
+      Scheduler.start(drum4);
+      break;
+    case '5':
+      Scheduler.start(drum5);
+      break;
+    case '6':
+      Scheduler.start(drum6);
+      break;
+    case '7':
+      Scheduler.start(drum7);
+      break;
+    case '8':
+      Scheduler.start(drum8);
+      break;
+    default:
+      // TODO: Handle parameter changes here
+      break;
+  }
+
 }
 
 void drum1(void) {
@@ -172,14 +202,3 @@ void drum8(void) {
       Scheduler.delay(60);       //Keep on for down duration
       pwm1.setPin(11,0); //PWM OFF
       }
-
-/*
- *   Serial.println("Starting loop.");
-
-  if (Serial.available()) {
-  
-    value = Serial.read();
-    
-    Serial.println (value);
- * 
- */
