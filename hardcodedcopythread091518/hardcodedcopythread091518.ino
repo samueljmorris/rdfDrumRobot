@@ -32,7 +32,7 @@ void readSerial() {
     value = Serial.read();
     
     Serial.println (value);
-
+// Switch statements for different cases based on which drum you use.
   switch (value) {
     case '1':
       Scheduler.start(drum1);
@@ -64,7 +64,7 @@ void readSerial() {
   }
 
 }
-
+//Function for Drum 1
 void drum1(void) {
       Serial.println("Drum 1");
       //Actuator down
@@ -81,7 +81,7 @@ void drum1(void) {
       Scheduler.delay(60);       //Keep on for up duration
       pwm0.setPin(0,0); //PWM OFF
       }
-
+// Function for Drum 2
 void drum2(void) {
       Serial.println("Drum 2");
       //Actuator down
@@ -99,7 +99,7 @@ void drum2(void) {
       pwm0.setPin(5,0); //PWM OFF
       }
 
-//Y U NO WORK THO
+//Function for Drum 3
 void drum3(void) {
       Serial.println("Drum 3");
       //Actuator down
@@ -116,7 +116,7 @@ void drum3(void) {
       Scheduler.delay(60);       //Keep on for down duration
       pwm0.setPin(6,0); //PWM OFF
 }
-//YOU TOO!?
+//Function for Drum 4
 void drum4(void) {
       Serial.println("Drum 4");
       //Actuator down
@@ -135,7 +135,7 @@ void drum4(void) {
       }
 
       //---------------PWM 1------------------
-
+// Function for Drum 5
 void drum5(void) {
       Serial.println("Drum 5");
       //Actuator down
@@ -152,7 +152,7 @@ void drum5(void) {
       Scheduler.delay(60);       //Keep on for up duration
       pwm1.setPin(0,0); //PWM OFF
       }
-
+// Function for Drunm 6 
 void drum6(void) {
       Serial.println("Drum 6");
       //Actuator down
@@ -170,6 +170,7 @@ void drum6(void) {
       pwm1.setPin(5,0); //PWM OFF
       }
 
+// Function for Drum 7
 void drum7(void) {
       Serial.println("Drum 7");
       //Actuator down
@@ -186,7 +187,7 @@ void drum7(void) {
       Scheduler.delay(60);       //Keep on for down duration
       pwm1.setPin(5,0); //PWM OFF
 }
-
+// Function for Drum 8
 void drum8(void) {
       Serial.println("Drum 8");
       //Actuator down
