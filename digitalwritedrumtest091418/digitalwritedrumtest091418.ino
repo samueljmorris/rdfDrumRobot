@@ -1,3 +1,7 @@
+#include <DeepSleepScheduler.h>
+#include <DeepSleepScheduler_avr.h>
+#include <DeepSleepScheduler_esp.h>
+
 #include <Wire.h>
 #include <Adafruit_PWMServoDriver.h>
 
