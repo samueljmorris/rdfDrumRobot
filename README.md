@@ -7,7 +7,7 @@ Making an Arduino Uno Circuit into a drummer!
 
 **Project by:** Samuel Morris, Henley Garcia, Guillermo Garrido, Carmen Morado
 
-**What it does:** The can be played with by inputing various values into the Arduino IDE
+**What it does:** The Drumbot can be played with by inputing various values into the Arduino IDE
 
 **How we built it:** Using an Arduino Uno and a robust circuit, we were able to develop a drum set that can be played with by inputing various values into the Arduino IDE. The program is written in C++. The drum sticks are moved using multiple actuators
 
