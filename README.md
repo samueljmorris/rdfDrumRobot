@@ -11,14 +11,14 @@ Making an Arduino Uno Circuit into a drummer!
 
 **How we built it:** Using an Arduino Uno and a robust circuit, we were able to develop a drum set that can be played with by inputing various values into the Arduino IDE. The program is written in C++. The drum sticks are moved using multiple actuators
 
-**Challenges we ran into:** Some of the pins were not initially responsive to our C++ code.
+**Challenges we ran into:** Some of the pins were not initially responsive to our C++ code. Moreover, the some of the wires did not easily stay connected to our breadboard. 
 
-**Accomplishments that we're proud of:**
+**Accomplishments that we're proud of:** Building a functional drummer bot in 36 hours.
 
-**What we learned:** We learne how to work with the Arduino Uno, C++ and circuit design in order to develop a complex robot. The team also gained experienced debugging hardware issues.
+**What we learned:** We learned how to work with the Arduino Uno, C++ and circuit design in order to develop a complex robot. The team also gained experienced debugging hardware issues.
 
 **What's next for Drumbot:**
-Be able to control velocity and change the parameters without having to hardcode them.
+We want our Drumbot to able to control the velocity and change the parameters of the actuators without having to hardcode them.
 
 **Built With:** 
 
