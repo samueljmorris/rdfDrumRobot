@@ -42,13 +42,13 @@ void drum1(void) {
       pwm0.setPin(1,0); //IN2 OFF
       pwm0.setPin(2,4095); //IN1 ON
       pwm0.setPin(0,4095); //PWM ON
-      Scheduler.delay(30);      //Keep on for down duration
+      Scheduler.delay(60);      //Keep on for down duration
       //Actuator up
       pwm0.setPin(0,0); //PWM OFF
       pwm0.setPin(1,4095); //IN2 ON
       pwm0.setPin(2,0); //IN1 OFF
       pwm0.setPin(0,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for up duration
+      Scheduler.delay(60);       //Keep on for up duration
       pwm0.setPin(0,0); //PWM OFF
       }
 
@@ -59,13 +59,13 @@ void drum2(void) {
       pwm0.setPin(4,0); //IN2 OFF
       pwm0.setPin(3,4095); //IN1 ON
       pwm0.setPin(5,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for down duration
+      Scheduler.delay(60);       //Keep on for down duration
       //Actuator up
       pwm0.setPin(5,0); //PWM OFF
       pwm0.setPin(4,4095); //IN2 ON
       pwm0.setPin(3,0); //IN1 OFF
       pwm0.setPin(5,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for up duration
+      Scheduler.delay(60);       //Keep on for up duration
       pwm0.setPin(5,0); //PWM OFF
       }
 
@@ -76,13 +76,13 @@ void drum3(void) {
       pwm0.setPin(4,0); //IN2 OFF
       pwm0.setPin(3,4095); //IN1 ON
       pwm0.setPin(5,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for down duration
+      Scheduler.delay(60);       //Keep on for down duration
       //Actuator up
       pwm0.setPin(5,0); //PWM OFF
       pwm0.setPin(4,4095); //IN2 ON
       pwm0.setPin(3,0); //IN1 OFF
       pwm0.setPin(5,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for down duration
+      Scheduler.delay(60);       //Keep on for down duration
       pwm0.setPin(5,0); //PWM OFF
 }
 
@@ -93,13 +93,13 @@ void drum4(void) {
       pwm0.setPin(10,0); //IN2 OFF
       pwm0.setPin(9,4095); //IN1 ON
       pwm0.setPin(11,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for down duration
+      Scheduler.delay(60);       //Keep on for down duration
       //Actuator up
       pwm0.setPin(11,0); //PWM OFF
       pwm0.setPin(10,4095); //IN2 ON
       pwm0.setPin(9,0); //IN1 OFF
       pwm0.setPin(11,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for down duration
+      Scheduler.delay(60);       //Keep on for down duration
       pwm0.setPin(11,0); //PWM OFF
       }
 
@@ -112,13 +112,13 @@ void drum5(void) {
       pwm1.setPin(1,0); //IN2 OFF
       pwm1.setPin(2,4095); //IN1 ON
       pwm1.setPin(0,4095); //PWM ON
-      Scheduler.delay(30);      //Keep on for down duration
+      Scheduler.delay(60);      //Keep on for down duration
       //Actuator up
       pwm1.setPin(0,0); //PWM OFF
       pwm1.setPin(1,4095); //IN2 ON
       pwm1.setPin(2,0); //IN1 OFF
       pwm1.setPin(0,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for up duration
+      Scheduler.delay(60);       //Keep on for up duration
       pwm1.setPin(0,0); //PWM OFF
       }
 
@@ -129,13 +129,13 @@ void drum6(void) {
       pwm1.setPin(4,0); //IN2 OFF
       pwm1.setPin(3,4095); //IN1 ON
       pwm1.setPin(5,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for down duration
+      Scheduler.delay(60);       //Keep on for down duration
       //Actuator up
       pwm1.setPin(5,0); //PWM OFF
       pwm1.setPin(4,4095); //IN2 ON
       pwm1.setPin(3,0); //IN1 OFF
       pwm1.setPin(5,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for up duration
+      Scheduler.delay(60);       //Keep on for up duration
       pwm1.setPin(5,0); //PWM OFF
       }
 
@@ -146,13 +146,13 @@ void drum7(void) {
       pwm1.setPin(4,0); //IN2 OFF
       pwm1.setPin(3,4095); //IN1 ON
       pwm1.setPin(5,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for down duration
+      Scheduler.delay(60);       //Keep on for down duration
       //Actuator up
       pwm1.setPin(5,0); //PWM OFF
       pwm1.setPin(4,4095); //IN2 ON
       pwm1.setPin(3,0); //IN1 OFF
       pwm1.setPin(5,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for down duration
+      Scheduler.delay(60);       //Keep on for down duration
       pwm1.setPin(5,0); //PWM OFF
 }
 
@@ -163,13 +163,13 @@ void drum8(void) {
       pwm1.setPin(10,0); //IN2 OFF
       pwm1.setPin(9,4095); //IN1 ON
       pwm1.setPin(11,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for down duration
+      Scheduler.delay(60);       //Keep on for down duration
       //Actuator up
       pwm1.setPin(11,0); //PWM OFF
       pwm1.setPin(10,4095); //IN2 ON
       pwm1.setPin(9,0); //IN1 OFF
       pwm1.setPin(11,4095); //PWM ON
-      Scheduler.delay(30);       //Keep on for down duration
+      Scheduler.delay(60);       //Keep on for down duration
       pwm1.setPin(11,0); //PWM OFF
       }
 
