@@ -29,17 +29,10 @@ void setup() {
 void readSerial() {
   // Wait for Serial.available():
   Scheduler.wait_available(Serial);
-<<<<<<< HEAD
-    value = Serial.read();
-    
-    Serial.println (value);
-// Switch statements for different cases based on which drum you use.
-=======
   value = Serial.read();
 
   Serial.println (value);
 
->>>>>>> 9f4235689bba56954516c28d532b1889de89753a
   switch (value) {
     case '1':
       Scheduler.start(drum1);
@@ -71,26 +64,8 @@ void readSerial() {
   }
 
 }
-//Function for Drum 1
+
 void drum1(void) {
-<<<<<<< HEAD
-      Serial.println("Drum 1");
-      //Actuator down
-      pwm0.setPin(0,0); //PWM OFF
-      pwm0.setPin(1,0); //IN2 OFF
-      pwm0.setPin(2,4095); //IN1 ON
-      pwm0.setPin(0,4095); //PWM ON
-      Scheduler.delay(60);      //Keep on for down duration
-      //Actuator up
-      pwm0.setPin(0,0); //PWM OFF
-      pwm0.setPin(1,4095); //IN2 ON
-      pwm0.setPin(2,0); //IN1 OFF
-      pwm0.setPin(0,4095); //PWM ON
-      Scheduler.delay(60);       //Keep on for up duration
-      pwm0.setPin(0,0); //PWM OFF
-      }
-// Function for Drum 2
-=======
   Serial.println("Drum 1");
   //Actuator down
   pwm0.setPin(0, 0); //PWM OFF
@@ -107,7 +82,6 @@ void drum1(void) {
   pwm0.setPin(0, 0); //PWM OFF
 }
 
->>>>>>> 9f4235689bba56954516c28d532b1889de89753a
 void drum2(void) {
   Serial.println("Drum 2");
   //Actuator down
@@ -125,9 +99,9 @@ void drum2(void) {
   pwm0.setPin(5, 0); //PWM OFF
 }
 
-//Function for Drum 3
 void drum3(void) {
   Serial.println("Drum 3");
+
   //Actuator down
   pwm0.setPin(6, 0); //PWM OFF
   pwm0.setPin(7, 0); //IN2 OFF
@@ -141,46 +115,11 @@ void drum3(void) {
   pwm0.setPin(6, 4095); //PWM ON
   Scheduler.delay(25);       //Keep on for down duration
   pwm0.setPin(6, 0); //PWM OFF
+  
 }
-//Function for Drum 4
-void drum4(void) {
-<<<<<<< HEAD
-      Serial.println("Drum 4");
-      //Actuator down
-      pwm0.setPin(11,0); //PWM OFF
-      pwm0.setPin(10,0); //IN2 OFF
-      pwm0.setPin(9,4095); //IN1 ON
-      pwm0.setPin(11,4095); //PWM ON
-      Scheduler.delay(60);       //Keep on for down duration
-      //Actuator up
-      pwm0.setPin(11,0); //PWM OFF
-      pwm0.setPin(10,4095); //IN2 ON
-      pwm0.setPin(9,0); //IN1 OFF
-      pwm0.setPin(11,4095); //PWM ON
-      Scheduler.delay(60);       //Keep on for down duration
-      pwm0.setPin(11,0); //PWM OFF
-      }
 
-      //---------------PWM 1------------------
-// Function for Drum 5
-void drum5(void) {
-      Serial.println("Drum 5");
-      //Actuator down
-      pwm1.setPin(0,0); //PWM OFF
-      pwm1.setPin(1,0); //IN2 OFF
-      pwm1.setPin(2,4095); //IN1 ON
-      pwm1.setPin(0,4095); //PWM ON
-      Scheduler.delay(60);      //Keep on for down duration
-      //Actuator up
-      pwm1.setPin(0,0); //PWM OFF
-      pwm1.setPin(1,4095); //IN2 ON
-      pwm1.setPin(2,0); //IN1 OFF
-      pwm1.setPin(0,4095); //PWM ON
-      Scheduler.delay(60);       //Keep on for up duration
-      pwm1.setPin(0,0); //PWM OFF
-      }
-// Function for Drunm 6 
-=======
+void drum4(void) {
+  
   Serial.println("Drum 4");
   //Actuator down
   pwm0.setPin(11, 0); //PWM OFF
@@ -195,11 +134,13 @@ void drum5(void) {
   pwm0.setPin(11, 4095); //PWM ON
   Scheduler.delay(25);       //Keep on for down duration
   pwm0.setPin(11, 0); //PWM OFF
+  
 }
 
 //---------------PWM 1------------------
 
 void drum5(void) {
+  
   Serial.println("Drum 5");
   //Actuator down
   pwm1.setPin(0, 0); //PWM OFF
@@ -214,48 +155,49 @@ void drum5(void) {
   pwm1.setPin(0, 4095); //PWM ON
   Scheduler.delay(25);       //Keep on for up duration
   pwm1.setPin(0, 0); //PWM OFF
+  
 }
 
->>>>>>> 9f4235689bba56954516c28d532b1889de89753a
 void drum6(void) {
+  
   Serial.println("Drum 6");
   //Actuator down
   pwm1.setPin(5, 0); //PWM OFF
   pwm1.setPin(4, 0); //IN2 OFF
   pwm1.setPin(3, 4095); //IN1 ON
   pwm1.setPin(5, 4095); //PWM ON
-  Scheduler.delay(250);       //Keep on for down duration
+  Scheduler.delay(35);       //Keep on for down duration
   //Actuator up
   pwm1.setPin(5, 0); //PWM OFF
   pwm1.setPin(4, 4095); //IN2 ON
   pwm1.setPin(3, 0); //IN1 OFF
   pwm1.setPin(5, 4095); //PWM ON
-  Scheduler.delay(25);       //Keep on for up duration
+  Scheduler.delay(30);       //Keep on for up duration
   pwm1.setPin(5, 0); //PWM OFF
+  
 }
 
-// Function for Drum 7
 void drum7(void) {
 
-  //Reversed the polarity to fix wiring issue.
-
   Serial.println("Drum 7");
-  //Actuator up
-  pwm1.setPin(6, 0); //PWM OFF
-  pwm1.setPin(7, 0); //IN2 OFF
-  pwm1.setPin(8, 4095); //IN1 ON
-  pwm1.setPin(6, 4095); //PWM ON
-  Scheduler.delay(25);       //Keep on for down duration
-  pwm1.setPin(6, 0); //PWM OFF
   //Actuator down
   pwm1.setPin(6, 0); //PWM OFF
   pwm1.setPin(7, 0); //IN2 OFF
   pwm1.setPin(8, 4095); //IN1 ON
   pwm1.setPin(6, 4095); //PWM ON
   Scheduler.delay(25);       //Keep on for down duration
+  //Actuator up
+  pwm1.setPin(6, 0); //PWM OFF
+  pwm1.setPin(7, 0); //IN2 OFF
+  pwm1.setPin(8, 4095); //IN1 ON
+  pwm1.setPin(6, 4095); //PWM ON
+  Scheduler.delay(25);       //Keep on for down duration
+  pwm1.setPin(6, 0); //PWM OFF
+
 }
-// Function for Drum 8
+
 void drum8(void) {
+  
   Serial.println("Drum 8");
   //Actuator down
   pwm1.setPin(11, 0); //PWM OFF
@@ -270,4 +212,5 @@ void drum8(void) {
   pwm1.setPin(11, 4095); //PWM ON
   Scheduler.delay(25);       //Keep on for down duration
   pwm1.setPin(11, 0); //PWM OFF
+  
 }
